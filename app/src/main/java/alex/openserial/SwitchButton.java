@@ -143,15 +143,12 @@ public class SwitchButton extends View implements android.view.View.OnClickListe
                     mSwitchOn = !mSwitchOn;
                     if(mListener != null) {
                         mListener.onChange(this, mSwitchOn);
-
-
-
                     }
                     invalidate();
                     mDeltX = 0;
                     return true;
                 } else if(mDeltX == 0 && mFlag) {
-                 
+
                     mDeltX = 0;
                     mFlag = false;
                     return true;
